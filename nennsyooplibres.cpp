@@ -27,14 +27,6 @@ public:
 		this->telephone = telephone;
 
 	}
-	library_user(const library_user& user) {
-		this->fio = user.fio;
-		this->NumberTicket = user.NumberTicket;
-		this->faculty = user.faculty;
-		this->Birthday = user.Birthday;
-		this->telephone = user.telephone;
-
-	}
 
 	~library_user() {
 
@@ -78,7 +70,6 @@ public:
 void self(list_of_users* arr, int n);
 
 
-int list_of_users::size = 0;
 void self(list_of_users* arr, int n) {
 	for (int i = 0; i < n; ++i) {
 		list_of_users a;
